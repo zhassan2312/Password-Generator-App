@@ -1,13 +1,132 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: "Poppins", system-ui;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.App
+{
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+}
+
+.passwordContainer
+{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 60%;
+  gap:1vw;
+  padding: 2vw;
+  border-radius: 1vw;
+  background-color: #440a7a;
+}
+
+.passwordContainer h1
+{
+  color:white;
+  font-weight: 500;
+  font-size: 2vw;
+}
+
+.passwordDisplay
+{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+
+}
+
+.password
+{
+  font-size: 2vw;
+  padding: 1vw;
+  width: 60%;
+  color:white;
+  background-color: rgb(39, 5, 71);
+  border: none;
+  border-radius: 2vw 0vw 0vw 2vw;
+  height: 5vw;
+  box-sizing: border-box;
+}
+
+.copy
+{
+  font-size: 1.4vw;
+  height: 5vw;
+  width: 6vw;
+  color:white;
+  background-color: #270547;
+  border: none;
+  border-radius: 0vw 2vw  2vw 0vw;
+  cursor: pointer;
+}
+
+.copy:hover
+{
+  background-color: rgb(48, 7, 86);
+}
+
+.passwordLength,
+.lowerCaseLetters,
+.numbersContainer,
+.specialCharactersContainer,
+.capitalLetters
+{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 70%;
+  color:white;
+}
+
+.passwordLength label,
+.lowerCaseLetters label,
+.numbersContainer label,
+.specialCharactersContainer label,
+.capitalLetters label
+{
+  font-size: 1.6vw;
+}
+
+
+.lowerCaseLetters input,
+.numbersContainer input,
+.specialCharactersContainer input,
+.capitalLetters input
+{
+  width: 2vw;
+  height: 2vw;
+  border: none;
+  outline: none;
+}
+
+
+.generate
+{
+  background-color: white;
+  color: #440a7a;
+  font-size: 2vw;
+  padding: 2vw 4vw;
+  border: none;
+  border-radius: 4vw;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.length
+{
+  width: 10vw;
+  border:none;
+  font-size: 2vw;
+  padding: 1vw 2vw;
+  border-radius: 2vw;
 }
